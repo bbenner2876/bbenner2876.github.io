@@ -28,15 +28,31 @@ h1, h2 {
     font-family: "Maven Pro", sans-serif;
 }
 
+
+h3 {
+    font-style: oblique;
+    margin-bottom: 0.25em;
+    font-size: 100%;
+    margin-top: 2em;
+}
+
+
+h3 + a:hover, p a:hover{
+    color:green;
+    font-style: oblique;
+}
+
+
+
 img {
     max-width: 60%;
     opacity: 1;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
 }
 
 img:hover {
-    opacity: 0.3;
+    opacity: 0.5;
     
 }
 
@@ -67,19 +83,6 @@ gallery img{
 a {
     
     text-decoration: none;
-}
-
-h3 {
-    font-style: oblique;
-    margin-bottom: 0.25em;
-    font-size: 100%;
-    margin-top: 2em;
-}
-
-
-h3 + a:hover, p a:hover{
-    color:green;
-    font-style: oblique;
 }
 
 
@@ -144,7 +147,7 @@ h3 + a:hover, p a:hover{
     .navBar.responsive a.hamburgerMenu {
         right: 0;
         top: 0;
-        padding: .5em .5em;
+        padding: .5em;
     }
     .navBar.responsive a {
         display: block;
@@ -156,15 +159,26 @@ h3 + a:hover, p a:hover{
     /*Smallest screens continued*/
     h1 {
         margin-top: 1em;
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        margin-bottom: .25em;
+    }
+    
+    h3 {
+        margin-top: .25em;
     }
     
     .name {
         font-size: 125%;
     }
     
-    h2, h3, body {
+    body {
         font-size: 95%;
     }
+    
+    
 }
 
 
