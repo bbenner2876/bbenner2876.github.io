@@ -1,6 +1,8 @@
 body {
     background-color: ghostwhite;
-    font-family: Georgia;
+    font-family: "Open Sans", sans-serif;
+    color: #3d3d3d;
+    font-size: 1em;
 }
 
 div {
@@ -8,6 +10,7 @@ div {
     padding-left: .5em;
     padding-right: .5em;
     border-bottom: 1px solid black;
+    background-color:;
 }
 
 .name {
@@ -21,9 +24,20 @@ h1 {
     
 }
 
+h1, h2 {
+    font-family: "Maven Pro", sans-serif;
+}
 
 img {
     max-width: 60%;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+img:hover {
+    opacity: 0.3;
+    
 }
 
 gallery img{
@@ -43,10 +57,11 @@ h3 {
     font-style: oblique;
     margin-bottom: 0.25em;
     font-size: 100%;
+    margin-top: 2em;
 }
 
 
-h3 + a:hover{
+h3 + a:hover, p a:hover{
     color:green;
     font-style: oblique;
 }
@@ -94,6 +109,7 @@ h3 + a:hover{
 
 /*Breakpoints and media queries for responsive design*/
 @media (max-width:760px){
+    /*responsive nav bar*/
     .navBar a{display:none;}
     .navBar a.hamburgerMenu {
         float:left;
@@ -102,10 +118,7 @@ h3 + a:hover{
     .navBar {
         font-size:;
     }
-}
-
-@media (max-width:760px){ /*Hamburger toggle taken from w3schools.com*/
-    /*Creates the vertical pop-up menu when hamburger icon is clicked on*/
+        
     .navBar {
         position: relative;
     }
@@ -113,6 +126,7 @@ h3 + a:hover{
     .navBar.responsive a.hamburgerMenu {
         right: 0;
         top: 0;
+        padding: .5em .5em;
     }
     .navBar.responsive a {
         display: block;
@@ -121,10 +135,25 @@ h3 + a:hover{
         padding-left: .25em;
         
     }
+}
+
+@media (max-width:760px){
+
     
     h1 {
         margin-top: 1em;
     }
+    
+    .name {
+        font-size: 125%;
+    }
+    
+    h2, h3, body {
+        font-size: 95%;
+    }
 }
 
-
+/*Larger desktop screens*/
+@media (min-width:1280px){
+    
+}

@@ -1,5 +1,6 @@
 
-function hamburgerToggle() { /*JavaScript hamburger code taken from w3schools.com*/
+/*JavaScript hamburger code taken from w3schools.com*/
+function hamburgerToggle() { 
     var x = document.getElementById("myNavBar");
     if (x.className === "navBar") {
         x.className += " responsive";
@@ -7,6 +8,9 @@ function hamburgerToggle() { /*JavaScript hamburger code taken from w3schools.co
         x.className = "navBar";
     }
 }
+
+
+
 
 /*Modal function ---- not used*/
 var modal = document.getElementById('myModal');
