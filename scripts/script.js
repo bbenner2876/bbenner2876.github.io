@@ -12,7 +12,8 @@ function hamburgerToggle() {
 
 
 
-/*Modal function ---- not used*/
+
+/*Modal function ---- not used: taken form w3schools.com*/
 var modal = document.getElementById('myModal');
 
 var img = document.getElementById('myImg');

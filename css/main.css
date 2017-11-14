@@ -40,6 +40,22 @@ img:hover {
     
 }
 
+.socialMediaImg {
+    width: 3em;
+    display: inline;
+}
+
+.socialMediaImg:hover {
+    opacity: 1;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(-20deg);
+    
+}
+
+.contactText {
+    line-height: 2em;
+}
+
 gallery img{
     display: inline-block;
     max-width:30%;
@@ -107,9 +123,11 @@ h3 + a:hover, p a:hover{
 
 
 
-/*Breakpoints and media queries for responsive design*/
+/*--------Breakpoints and media queries for responsive design--------*/
+
+/*----Smallest screens with special nav bar----*/
 @media (max-width:760px){
-    /*responsive nav bar*/
+    /*responsive nav bar: taken from w3schools.com*/
     .navBar a{display:none;}
     .navBar a.hamburgerMenu {
         float:left;
@@ -135,11 +153,7 @@ h3 + a:hover, p a:hover{
         padding-left: .25em;
         
     }
-}
-
-@media (max-width:760px){
-
-    
+    /*Smallest screens continued*/
     h1 {
         margin-top: 1em;
     }
@@ -153,7 +167,51 @@ h3 + a:hover, p a:hover{
     }
 }
 
-/*Larger desktop screens*/
+
+
+
+
+/*----Medium sized screens: laptops, tablets----*/
+@media (min-width:760px) and (max-width:1280px){
+    div {
+        margin: 1.5em;
+    }
+}
+
+
+
+
+
+/*----Larger desktop screens----*/
 @media (min-width:1280px){
+    div {
+        margin: 3em;
+    }
+    
+    h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+    
+    p, a {
+        font-size: 1.25em;
+    }
+    
+    img {
+        max-width: 600ox;
+    }
+    
+    .navBar a{
+        text-align: center;
+        font-size: 1.5em;
+    }
     
 }
