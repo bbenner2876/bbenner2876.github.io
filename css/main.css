@@ -7,10 +7,11 @@ div {
     padding-bottom: .5em;
     padding-left: .5em;
     padding-right: .5em;
+    border-bottom: 1px solid black;
 }
 
 h1 {
-    margin-top: 2em;
+    margin-top: 2.5em;
     text-align: center;
     text-decoration-color: aqua;
     
@@ -34,7 +35,12 @@ a {
     position: fixed;
     top: 0em;
     margin-top: .5em;
+    padding: 0;
     
+}
+
+.navBar a.hamburgerMenu {
+    display:none;
 }
 
 .navBar a {
@@ -42,7 +48,7 @@ a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: .75em 1em;
     text-decoration: none;
     font-size: 1.25em;
     
@@ -53,33 +59,38 @@ a {
     color: black;
 }
 
-.navBar .hamburgerMenu {
-    display: none;
-}
-
 
 
 /*Breakpoints and media queries for responsive design*/
-@media screen and (max-width:450px){
+@media screen and (max-width:540px){
     .navBar a:not(:first-child) {display:none;}
     .navBar a.hamburgerMenu {
         float:right;
         display: block;
     }
+    .navBar {
+        font-size:;
+    }
 }
 
-@media screen and (max-width:450px){ /*Hamburger toggle taken from w3schools.com*/
+@media screen and (max-width:540px){ /*Hamburger toggle taken from w3schools.com*/
     /*Creates the vertical pop-up menu when hamburger icon is clicked on*/
+    .navBar {
+        position: relative;
+    }
     .navBar.responsive {position: relative;}
     .navBar.responsive a.hamburgerMenu {
-        position: absolute;
         right: 0;
         top: 0;
     }
     .navBar.responsive a {
-        float: none;
         display: block;
         text-align: left;
+        
+    }
+    
+    h1 {
+        margin-top: 1em;
     }
 }
 
