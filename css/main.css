@@ -192,6 +192,7 @@ nav {
     text-align: center;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    box-shadow: 0em .015em  .5em gray;
 }
 
 nav a.hamburgerMenu {
