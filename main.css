@@ -1,0 +1,322 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #3d3d3d;
+    font-size: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+section {
+    padding-bottom: .5em;
+    background-color:;
+}
+
+mark{
+    background-color: lightcyan;
+}
+
+.name {
+    font-size: 150%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section img{
+    max-width: 30%;
+}
+
+h1 {
+    margin-top: 2.5em;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: .5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    margin-top: 0;
+}
+
+
+h3 {
+    margin-bottom: 0.25em;
+    font-size: 100%;
+    margin-top: 2em;
+}
+
+
+h3 + a:hover, p a:hover{
+    color:cyan;
+    font-style: oblique;
+}
+
+
+
+img {
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: transform .3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    
+}
+
+td img{
+    width:120%;
+    margin-top: 1em;
+}
+
+.resumeImg {
+    max-width: 20%;
+}
+
+.resume {
+}
+
+.socialMediaImg {
+    width: 3em;
+    display: inline;
+}
+
+.socialMediaImg:hover {
+    opacity: 1;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(-20deg);
+    
+}
+
+.contactText {
+    line-height: 2em;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+td a {
+    color: black;
+}
+
+
+td img {
+    max-width: 100%;
+}
+
+
+
+td {
+    padding-bottom: 1em;
+    vertical-align: top;
+    margin: auto; 
+    padding-right:  .25em;
+}
+
+
+a:visited {
+    color: blue;
+}
+
+
+th {
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+}
+
+a:visited h2{
+    color: black;
+}
+
+a:hover h2{
+    font-style: oblique;
+    color: blue;
+}
+
+button {
+    text-decoration: none;
+    display: inline-block;
+}
+
+th a {
+    color:black;
+}
+
+th a:visited {
+    color:black;
+}
+
+th a:hover {
+    font-style: oblique;
+    color: cyan;
+
+}
+
+button {
+    margin-top: 1em;
+    vertical-align:;
+    border: none;
+    color: white;
+    padding: 1em 2em;
+    box-shadow: .15em .15em black;
+}
+
+.resumeTable {
+    align-content: center;
+}
+
+
+
+
+/*Navigation bar*/
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    box-shadow: 0em .015em  .5em gray;
+}
+
+nav a.hamburgerMenu {
+    display:none;
+}
+
+nav ul{
+    
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+nav a {    
+    text-decoration: none;
+    transition: box-shadow .5s, color .5s;
+    transition-delay: linear;
+    background-color: white;
+
+    font-size: 1em;
+    
+}
+
+nav a:hover {
+    color: aqua;
+    font-style: oblique;
+
+}
+
+
+
+/*--------Breakpoints and media queries for responsive design--------*/
+
+/*----Smallest screens with special nav bar----*/
+
+
+@media (max-width:760px){
+    /*responsive nav bar: taken from w3schools.com*/
+    /*
+    .navBar a{
+        display:none;
+        box-shadow: none;
+    }
+    .navBar a.hamburgerMenu {
+        float:left;
+        display: block;
+        width: 100%;
+    }
+    .navBar {
+        font-size:;
+    }
+        
+    .navBar {
+        position: relative;
+    }
+    .navBar.responsive {
+        position: relative;
+    }
+    .navBar.responsive a.hamburgerMenu {
+        right: 0;
+        top: 0;
+        padding: .5em;
+    }
+    .navBar.responsive a {
+        display:;
+        text-align: left;
+        padding-right: .25em;
+        padding-left: .25em;
+        
+    }
+    */
+    
+    nav {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+
+
+    /*Smallest screens continued*/
+    h1 {
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        margin-bottom: .25em;
+    }
+    
+    h3 {
+        margin-top: .25em;
+    }
+    
+    .name {
+        font-size: 125%;
+    }
+    
+    body {
+        font-size: 95%;
+    }
+    
+    
+}
+
+
+
+
+
+/*----Medium sized screens: laptops, tablets----*/
+@media (min-width:760px) and (max-width:1280px){
+
+}
+
+
+
+
+
+/*----Larger desktop screens----*/
+@media (min-width:1280px){
+    body{
+        margin-left: 20em;
+        margin-right: 20em;
+    }
+
+}
