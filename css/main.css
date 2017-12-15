@@ -5,6 +5,7 @@ body {
     font-size: 1em;
     margin-left: 10em;
     margin-right: 10em;
+    margin-bottom: 5em;
 }
 
 section {
@@ -81,8 +82,8 @@ td img{
 .resume {
 }
 
-.socialMediaImg {
-    width: 3em;
+.contactIcon {
+    width: 2.5em;
     display: inline;
 }
 
@@ -177,14 +178,19 @@ button {
     align-content: center;
 }
 
+.selectedResume {
+    background-color: red;
+}
 
+.resumeArrow {
+    width:1em;
+}
 
 
 /*Navigation bar*/
-nav {
+nav, footer {
     background-color: white;
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
@@ -195,20 +201,31 @@ nav {
     box-shadow: 0em .015em  .5em gray;
 }
 
-nav a.hamburgerMenu {
-    display:none;
+nav {
+    top:0;
 }
 
-nav ul{
+footer {
+    bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em
     
 }
 
-nav li{
+footer li {
+    padding: 0em 1em;
+}
+
+nav a.hamburgerMenu, footer a.hamburgerMenu {
+    display:none;
+}
+
+nav li, footer li{
     display: inline-block;
     margin: 0 0.5em;
 }
 
-nav a {    
+nav a, footer a {    
     text-decoration: none;
     transition: box-shadow .5s, color .5s;
     transition-delay: linear;
@@ -218,7 +235,7 @@ nav a {
     
 }
 
-nav a:hover {
+nav a:hover, footer a:hover {
     color: aqua;
     font-style: oblique;
 
@@ -323,6 +340,10 @@ nav a:hover {
     body{
         margin-left: 20em;
         margin-right: 20em;
+    }
+    
+    nav li {
+        margin: 0 1em;
     }
 
 }

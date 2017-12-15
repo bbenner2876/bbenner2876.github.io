@@ -11,6 +11,7 @@
         <meta name="author" content="Brett Benner">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="scripts/script.js"></script>
     </head>
     <body>
@@ -21,9 +22,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#aboutTarget">About</a></li>
                     <li><a href="#projectsTarget">Projects</a></li>
-                    <li><a href="#resumeTarget">Resume</a></li>
-                    <li><a href="#contactTarget">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="hamburgerMenu" onclick="hamburgerToggle()">&#9776;</a></li>
+                    <li><a href="images/WebDevelopmentResume2016.pdf" target="_blank">Resume<img class="resumeArrow" src="images/double_up1600.png"></a></li>
                 </ul>
             </nav>
             <main>
@@ -109,32 +108,14 @@
                     </table>
                 </section>
 
-
-                <!--Resume section, potential modal image implementation-->
-                <div class="resume"> <!--Display of current resume-->
-                    <h2><a name="resumeTarget">Resume</a></h2>
-                    <table name="resumeTable">
-                        <tr>
-                            <td><a href="images/WebDevelopmentResume2016-1.jpg" target="_blank"><img class="resumeImg" src ="images/WebDevelopmentResume2016-1.jpg" alt="Brett's Resume"></a></td>
-                                
-                            <td><a href="images/WebDevelopmentResume2016-1.jpg" download><img src="images/resume_icon.png"></a></td>
-                            
-                        </tr>
-                    </table>
-                </div>
-
             </main>
             <!--Contact information and social media links-->
             <footer class="contact"> 
-                <h2><a class="contactTarget">Contact Me</a></h2>
-                    
-                    <p class="contactText">
-                        <img class="socialMediaImg" src="images/linkedin.png" alt="LinkedIn icon">See what I'm up to on <a href="https://www.linkedin.com/in/brett-benner-6514a063/" target="_blank">LinkedIn</a>.
-                    </p>
-                    <p class="contactText">
-                        <img class="socialMediaImg" src="images/email.png" alt="email icon">
-                        You can email me at <a href="mailto:bbenner@uci.edu" target="_blank">bbenner@uci.edu</a>.
-                    </p>
+                <ul>
+                    <li><a href="mailto:bbenner@uci.edu" target="_blank"><img class="contactIcon" src="images/email.png" alt="email icon"></a></li>
+                    <li><a href="images/WebDevelopmentResume2016.pdf" target="_blank"><img id ="resumeIcon" class="contactIcon" src="images/resume_icon.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/brett-benner-6514a063/" target="_blank"><img class="contactIcon" src="images/linkedin.png"></a></li>
+                </ul>
             </footer>  
  
     </body>
