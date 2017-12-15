@@ -184,6 +184,23 @@ button {
 
 .resumeArrow {
     width:1em;
+    vertical-align: top;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.resumeDownloadArrow {
+    width:1em;
+    vertical-align: top;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    
 }
 
 
