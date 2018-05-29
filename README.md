@@ -1,29 +1,8 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
+This is my first portfolio website meant to let visitors learn a little about myself, my skills, and some projects I've worked with.
 
 ### Who do I talk to? ###
+You can contact me at via email -> bbenner@uci.edu
 
-* Repo owner or admin
-* Other community or team contact
+I'm always looking to improve myself, my skillset, and my projects so please message me with any suggestions for future updates!
