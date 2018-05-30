@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brett Benner</title>
+        <meta name="description" content="Online web portfolio for Brett Benner.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Brett Benner, Brett, Benner, Brett B">
+        <meta name="author" content="Brett Benner">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </head>
+    <body>
+  
+            <!--Header + Navigation-->
+            <nav class="navBar" id="myNavBar"><!--Main navigation bar for website linking to different sections-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutTarget">About</a></li>
+                    <li><a href="#projectsTarget">Projects</a></li>
+                    <li><a href="/static/images/resume_fall2017.pdf" target="_blank">Resume<img class="resumeArrow" src="/static/images/double_up1600.png"></a></li>
+                </ul>
+            </nav>
+            <main>
+                <header class="header">
+                    <h1>Hello, I am <br><strong class="name">Brett Benner.</strong> <br>I am a UX researcher, designer, & front-end developer!</h1>  
+                </header>
+
+
+                <!--About section and bio-->
+                <section class="about-section">
+                    <h2><a name="aboutTarget">About</a></h2>
+                    <p>You're probably wondering just who I am! I grew up in sunny <mark>San Diego</mark> and developed a love for <mark>alt-rock, carne asada, and salty breezes.</mark></p>
+                    <p>I am currently attending the <mark>University of California, Irvine</mark> as an undergraduate student studying Informatics with a specialisation in Human-Computer Interaction. I have been working recently on developing my technicals skills as a website <mark>developer</mark>, my creative skills as a <mark>designer</mark>, and my people skills as a user <mark>researcher.</mark></p>
+                    <p>My most current interests are operating as the publicity chair for the <mark>Japanese American club</mark> at UCI, planning a week long <mark>roadtrip</mark> for winter break, and waiting for some Murakami <mark>books</mark> to come off hold at the library!</p> 
+                </section>
+
+
+                <!--List of past projects-->
+                <section class="projects-section">
+                    <h2>Projects</h2>
+                    <article class="flex-container">
+                        <div class="card">
+                            <img src="/static/images/competitorAnalysis.jpg">
+                            <div class="card-details">
+                                <h4>User Research and Testing</h4>
+                                <span><button>UX Testing</button><button>UX Testing</button></span>
+                                <p>Light user researching and testing done for my portfolio website. User research consisted of user interviews with industry professionals and professonals in other fields.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/static/images/yummi.jpg">
+                            <div class="card-details">
+                                <h4>Yummi: Onboarding Screens</h4>
+                                <span><button>InVision</button><button>Photoshop</button></span>
+                                <p>Designed onboarding process and screens for the Yummi food logging app.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/static/images/crane_logo.jpg">
+                            <div class="card-details">
+                                <h4>Logo Design</h4>
+                                <span><button>Photoshop</button></span>
+                                <p>Designed and produced the white paper crane logo used by the Japanese American club, Tomo No Kai, at UCI through Adobe Photoshop.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/static/images/carrieForbes.jpg">
+                            <div class="card-details">
+                                <h4>Carrie Forbes: Website</h4>
+                                <span><button>HTML5</button><button>CSS</button><button>CMS</button></span>
+                                <p>Updated and transformed a static one page SquareSpace website into an online shop for the Carrie Forbes brand products.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/static/images/metamemory.jpg">
+                            <div class="card-details">
+                                <h4>UCI WMAP: MetaMemory</h4>
+                                <span><button>HTML5</button><button>CSS</button><button>JS</button></span>
+                                <p>Year long project based around developing and hosting memory games used for research testing for the Working Memory and Plasticity Lab at UCI.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/static/images/AIF%20Tomo%20Flyer_general_meetings.jpg">
+                            <div class="card-details">
+                                <h4>Tomo No Kai</h4>
+                                <span><button>Photoshop</button></span>
+                                <p>Designed and produced physical flyers for Tomo No Kai through Adobe Photoshop. </p>
+                            </div>
+                        </div>
+                        
+                    </article>
+                </section>
+
+            </main>
+            <!--Contact information and social media links-->
+            <footer class="contact"> 
+                <ul>
+                    <li><a href="mailto:bbenner@uci.edu" target="_blank"><img class="contactIcon" src="/static/images/email.png" alt="email icon"></a></li>
+                    <li><a href="images/resume_fall2017.pdf" target="_blank" download><img id ="resumeIcon" class="contactIcon" src="/static/images/resume_icon.png"><img class="resumeDownloadArrow" src="/static/images/double_up1600.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/brett-benner-6514a063/" target="_blank"><img class="contactIcon" src="/static/images/linkedin.png"></a></li>
+                </ul>
+            </footer>  
+ 
+    </body>
+
