@@ -1,8 +1,10 @@
+###Getting started### 
 
-### What is this repository for? ###
-This is my first portfolio website meant to let visitors learn a little about myself, my skills, and some projects I've worked with.
+Before running make sure to install dependencies using:
+$ pip install -r requirements.txt $ npm install $ bower install
+Start the site by running $ run.sh in the command line
 
-### Who do I talk to? ###
-You can contact me at via email -> bbenner@uci.edu
 
-I'm always looking to improve myself, my skillset, and my projects so please message me with any suggestions for future updates!
+Powered by Python3, Flask in the back-end, and React in the front-end.
+
+#Has been moved to a Heroku app -> brettbenner.com
