@@ -1,7 +1,0 @@
----To-Be-Done---
-+Replace projects section with cards for projects
-+Update bio/blurb
-+
-
-
----Bugs---
