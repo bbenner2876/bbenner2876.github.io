@@ -1,10 +1,12 @@
 ---To-Be-Done---
 x Replace projects section with cards for projects
+
 + Update bio/blurb
 + Update project information text and images
 + Make project cards clickable and link to independent pages
 + Fix flexbox spacing when stretching
 + Reduce margins for mobile viewers
++ Fix typos
 
 
 ---Bugs---
