@@ -7,6 +7,9 @@ x Update bio/blurb
 + Make project cards clickable and link to independent pages
 + Fix flexbox spacing when stretching
 + Reduce margins for mobile viewers
++ Change colors to forest green
++ Update left-side colors to match
++ Change highlighted items to regular link styling for consistency
 
 
 

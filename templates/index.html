@@ -10,7 +10,7 @@
         <meta name="keywords" content="Brett Benner, Brett, Benner, Brett B">
         <meta name="author" content="Brett Benner">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}">
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
 
@@ -23,7 +23,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#aboutTarget">About</a></li>
                     <li><a href="#projectsTarget">Projects</a></li>
-                    <li><a href="/static/images/resume_fall2017.pdf" target="_blank">Resume<img class="resumeArrow" src="/static/images/double_up1600.png"></a></li>
+                    <li><a href="/static/images/resume_fall2017.pdf" target="_blank">Resume</a><img class="resumeArrow" src="/static/images/double_up1600.png"></li>
                 </ul>
             </nav>
             <main>
@@ -32,27 +32,28 @@
                 </header>
 
 
+
                 <!--About section and bio-->
                 <section class="about-section">
                     <h2><a name="aboutTarget">About</a></h2>
                     <p>Welcome to my site! I originally hail from San Diego where I developed a love for alt-rock, carne asada, and sun burns.
-                        Just recently I graduated from the <a href="https://uci.edu/" target="_blank"><mark>University of California, Irvine</mark></a> with a specialization in Human-Computer Interaction. 
-                        I am currently working in Orange County as a <a href="https://theblog.adobe.com/what-does-a-ux-designer-actually-do/" target="_blank"><mark>UX Designer & Researcher</mark></a>.
+                        Just recently I graduated from the <a href="https://uci.edu/" target="_blank">University of California, Irvine</a> with a specialization in Human-Computer Interaction. 
+                        I am currently working in Orange County as a <a href="https://theblog.adobe.com/what-does-a-ux-designer-actually-do/" target="_blank">UX Designer & Researcher</a>.
                     </p><br />
                     <p>
-                        My goals for the quarter are to continue developing my mock-up skills with <a href="https://medium.com/@mengto/figma-vs-sketch-c01e5e74eddd" target="_blank"><mark>Figma</mark></a>, 
-                        study best design practices online, and keep my JavaScript knowledge up to par with <a href="http://javascriptbook.com/" target="_blank"><mark>JavaScript and jQuery: Interactive Front-End Web Development.</mark></a>
+                        My goals for the quarter are to continue developing my mock-up skills with <a href="https://medium.com/@mengto/figma-vs-sketch-c01e5e74eddd" target="_blank">Figma</a>, 
+                        study best design practices online, and keep my JavaScript knowledge up to par with <a href="http://javascriptbook.com/" target="_blank">JavaScript and jQuery: Interactive Front-End Web Development.</a>
                     </p><br />
                     <p>
                         Outside of UX design I am keeping myself busy reading every Murakami book, reducing my closet to black or white t-shirts, and eating at 
-                        <a href="https://www.yelp.com/biz/chan-chan-food-house-irvine-2" target="_blank"><mark>Chan Chan Food House</mark></a>!
+                        <a href="https://www.yelp.com/biz/chan-chan-food-house-irvine-2" target="_blank">Chan Chan Food House</a>!
                     </p> 
                 </section>
 
 
                 <!--List of past projects-->
                 <section class="projects-section">
-                    <h2>Projects</h2>
+                    <h2 id="projects-title">Projects</h2>
                     <article class="flex-container">
                         <div class="card">
                             <img src="/static/images/competitorAnalysis.jpg">
@@ -101,12 +102,9 @@
                                 <span><button>Photoshop</button></span>
                                 <p>Designed and produced physical flyers for Tomo No Kai through Adobe Photoshop. </p>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </article>
                 </section>
-
-                <span>Contact me at bbenner@uci.edu</span>
 
             </main>
             <!--Contact information and social media links-->

@@ -40,18 +40,28 @@ nav li, footer li{
     margin: 0 0.5em;
 }
 
-nav a, footer a {    
+nav a {
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+}
+
+nav a:hover {
+    border-bottom: 2px dotted black;
+}
+
+nav a, p a {    
     transition: box-shadow .5s, color .5s;
     transition-delay: linear;
     background-color: white;
-    color: rgb(72, 130, 187);
     font-size: 1em;
+    color: darkgray;
     
 }
 
-nav a:hover, footer a:hover {
-    color:rgb(100, 197, 230);
+
+nav a:hover, p a:hover {
+    color:rgb(0, 100, 82);
     transition: 0.4s;
 
 }
@@ -68,11 +78,45 @@ nav a:hover, footer a:hover {
 }
 
 
+a {
+    text-decoration: underline dotted black;
+
+}
 
 
+a:visited {
+    text-decoration: underline dotted rgb(0, 100, 82);
+    color: darkgray;
+}
+
+h2 a {
+    text-decoration: none;
+}
 
 
 /*BODY CONTENT*/
+
+
+header {
+    padding-top: 70px;
+    padding-left: 20%;
+    padding-right: 27%;
+
+    background-image: url('/static/images/prof_pic_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+
+    border-left: 8px solid black;
+    min-height: 600px;
+
+}
+
+.header-container {
+    padding-top: 70px;
+
+}
 
 body {
     background-color: white;
@@ -92,14 +136,14 @@ main {
 
 
 section {
-    margin-top: 100px;
     padding-left: 20%;
     width: 60%;
+    padding-top: 50px;
 
 }
 
 .about-section {
-    border-left: 8px solid lightblue;
+    border-left: 8px solid rgb(0, 100, 82);
 }
 
 .about-section p {
@@ -107,12 +151,14 @@ section {
 }
 
 .projects-section {
-    border-left: 8px solid skyblue;
+    border-left: 8px solid #F27127;
+    ;
 }
 
 
 mark{
-    background-color: lightblue;
+    background-color: rgb(1, 64, 52);
+    ;
     padding: 0 3px;
 }
 
@@ -126,14 +172,9 @@ ul {
     margin: 0;
 }
 
-header {
-    margin-top: 70px;
-    padding-left: 20%;
-    width: 60%;
-}
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-family: 'Dosis', sans-serif;
     margin-bottom: 0;
     font-size: 50px;
@@ -142,7 +183,12 @@ h1 {
 h2 {
     font-family: 'Dosis', sans-serif;
     margin-top: 0;
-    border-bottom: 2px dotted black;
+    border-bottom: 2px dotted rgb(0, 100, 82);
+}
+
+#projects-title {
+    border-bottom: 2px dotted #F27127;
+
 }
 
 
@@ -152,13 +198,9 @@ h3 {
     margin-top: 2em;
 }
 
-
-h3 + a:hover, p a:hover{
-    color:#ADD8E6;
-    font-style: oblique;
+p {
+    margin: 0;
 }
-
-
 
 
 
@@ -200,15 +242,6 @@ h3 + a:hover, p a:hover{
     line-height: 2em;
 }
 
-a {
-    
-    text-decoration: none;
-}
-
-
-a:visited {
-    text-decoration: none;
-}
 
 
 
@@ -220,8 +253,8 @@ a:visited {
     border-radius: 5px; /* 5px rounded corners */
     border: 2px solid lightgray;
     background: white;
-    height: 400px;
-    width: 230px;
+    height: 410px;
+    width: 240px;
     margin-top: 10px;
     margin-left: 0%;
     margin-right: 0%;
@@ -230,7 +263,7 @@ a:visited {
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 5px rgba(242, 113, 39, 0.253);
     transition: 0.5s;
 }
 
@@ -257,7 +290,7 @@ a:visited {
     justify-content: space-between;
 }
 
- .card-details h4, p {
+ .card-details {
     margin: 2px 0;
 }
 
