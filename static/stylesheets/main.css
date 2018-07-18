@@ -50,7 +50,7 @@ nav a:hover {
     border-bottom: 2px dotted black;
 }
 
-nav a, p a {    
+nav a, p a, header a {    
     transition: box-shadow .5s, color .5s;
     transition-delay: linear;
     background-color: white;
@@ -60,7 +60,7 @@ nav a, p a {
 }
 
 
-nav a:hover, p a:hover {
+nav a:hover, p a:hover, header a:hover{
     color:rgb(0, 100, 82);
     transition: 0.4s;
 
@@ -111,6 +111,14 @@ header {
     border-left: 8px solid black;
     min-height: 600px;
 
+}
+
+header h2 {
+    border: none;
+}
+
+.email {
+    color: rgb(0, 100, 82);
 }
 
 .header-container {
@@ -198,6 +206,11 @@ h3 {
     margin-top: 2em;
 }
 
+h4 {
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
 p {
     margin: 0;
 }
@@ -255,10 +268,7 @@ p {
     background: white;
     height: 410px;
     width: 240px;
-    margin-top: 10px;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 5px;
+    margin: 10px auto;
     overflow: hidden;
 }
 

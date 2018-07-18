@@ -1,16 +1,20 @@
 ---To-Be-Done---
-x Replace projects section with cards for projects
-x Fix typos
-x Update bio/blurb
-
 + Update project information text and images
 + Make project cards clickable and link to independent pages
 + Fix flexbox spacing when stretching
-+ Reduce margins for mobile viewers
-+ Change colors to forest green
-+ Update left-side colors to match
-+ Change highlighted items to regular link styling for consistency
++ Update intro text
++ Replace icons with svg
++ Update resume link
++ Organize images folder
 
+---Done---
+x Replace projects section with cards for projects
+x Fix typos
+x Update bio/blurb
+x Reduce margins for mobile viewers
+x Change colors to forest green
+x Update left-side colors to match
+x Change highlighted items to regular link styling for consistency
 
 
 ---Bugs---
