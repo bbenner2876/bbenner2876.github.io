@@ -115,6 +115,7 @@ header {
 
 header h2 {
     border: none;
+    margin: 0;
 }
 
 .email {

@@ -1,4 +1,4 @@
----To-Be-Done---
+---Done---
 + Update project information text and images
 + Make project cards clickable and link to independent pages
 + Fix flexbox spacing when stretching
@@ -7,9 +7,8 @@
 + Update resume link
 + Organize images folder
 
----Done---
+---To-Be-Done---
 x Replace projects section with cards for projects
-x Fix typos
 x Update bio/blurb
 x Reduce margins for mobile viewers
 x Change colors to forest green
