@@ -143,14 +143,13 @@ main {
 section {
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     overflow: hidden;
 }
 
 .about-section {
     border-left: 8px solid #ffd039;
-    padding-bottom: 100px;
-
     background-image: url('/static/images/prof_pic_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,6 +174,7 @@ section {
 .contact-section {
     background-color: lightgray;
     padding-left: 40%;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
