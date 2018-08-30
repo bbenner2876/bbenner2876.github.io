@@ -21,10 +21,10 @@ nav {
 
 footer {
     margin-left: 20%;
-    margin-bottom: 0.5%;
     bottom: 0;
-    padding: 8px 0;
-    width: 150px;
+    padding: 8px 4px;
+    padding-top: 8px;
+    width: 125px;
     border-radius: 10px;
     
 }
@@ -378,6 +378,9 @@ p {
         background-image: none;
     }
     
+    .contact-section {
+        padding-left: 0;
+    }
 }
 
 
