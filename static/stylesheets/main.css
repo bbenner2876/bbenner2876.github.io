@@ -49,17 +49,16 @@ nav a:hover {
     border-bottom: 2px dotted black;
 }
 
-nav a, p a, header a {    
+nav a, p a, section a, .contact-section a{    
     transition: box-shadow .5s, color .5s;
     transition-delay: linear;
-    background-color: white;
     font-size: 1em;
     color: darkgray;
     
 }
 
 
-nav a:hover, p a:hover, header a:hover{
+nav a:hover, p a:hover, header a:hover, .contact-section a{
     color:rgb(0, 100, 82);
     transition: 0.4s;
 
@@ -101,7 +100,7 @@ header {
     padding-left: 20%;
     padding-right: 27%;
 
-    background-image: url('/static/images/prof_pic_bg.png');
+    background-image: url('/static/images/mountain_svg_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -131,9 +130,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #3d3d3d;
     font-size: 15px;
-    margin-bottom: 5em;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
 
 }
 
@@ -145,14 +142,20 @@ main {
 
 section {
     padding-left: 20%;
-    width: 60%;
+    padding-right: 20%;
     padding-top: 50px;
-
+    overflow: hidden;
 }
 
 .about-section {
-    border-left: 8px solid rgb(0, 100, 82);
-    padding-bottom: 100px
+    border-left: 8px solid #ffd039;
+    padding-bottom: 100px;
+
+    background-image: url('/static/images/prof_pic_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .about-section p {
@@ -160,8 +163,22 @@ section {
 }
 
 .projects-section {
-    border-left: 8px solid #F27127;
-    ;
+    border-left: 8px solid rgb(0, 100, 82);
+    
+    /**background-image: url('/static/images/mountain_svg_bg.png');**/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.contact-section {
+    background-color: lightgray;
+    padding-left: 40%;
+    padding-bottom: 50px;
+}
+
+.contact-section a {
 }
 
 
@@ -201,9 +218,20 @@ h2 {
     border-bottom: 2px dotted rgb(0, 100, 82);
 }
 
-#projects-title {
-    border-bottom: 2px dotted #F27127;
+#about-title {
+    border-bottom: 2px dotted #ffd039;
+}
 
+#about-title a {
+    color: #ffd039;
+}
+
+#projects-title {
+    border-bottom: 2px dotted rgb(0, 100, 82);
+}
+
+#projects-title a {
+    color: rgb(0, 100, 82); 
 }
 
 
@@ -256,7 +284,7 @@ p {
 
 .card {
     border-radius: 5px;
-    border: 2px solid rgba(242, 113, 39, 0.274);
+    border: 2px solid rgb(0, 100, 82, 0.574);
     background: white;
     height: 410px;
     width: 240px;
@@ -287,7 +315,6 @@ p {
 
 .flex-container {
     display: flex;
-    margin-bottom: 300px;
     flex-flow: row wrap;
     justify-content: space-between;
 }
@@ -345,6 +372,10 @@ p {
     section {
         padding: 5%;
         width: 90%;
+    }
+
+    .about-section{
+        background-image: none;
     }
     
 }
