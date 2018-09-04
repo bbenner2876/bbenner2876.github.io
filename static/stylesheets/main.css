@@ -89,9 +89,10 @@ h2 a {
 
 
 header {
-    padding-top: 70px;
+    padding-top: 8em;
     padding-left: 20%;
     padding-right: 27%;
+    padding-bottom: 14em;
 
     background-image: url('/static/images/mountain_svg_bg.png');
     background-repeat: no-repeat;
