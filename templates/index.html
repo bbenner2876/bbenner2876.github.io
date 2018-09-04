@@ -23,12 +23,12 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#aboutTarget">About</a></li>
                     <li><a href="#projectsTarget">Projects</a></li>
-                    <li><a href="/static/images/Resume_bbenner_2018.pdf" target="_blank">Resume</a><img class="resumeArrow" src="/static/images/double_up1600.png"></li>
+                    <li><a href="/static/images/Resume_bbenner_2018.pdf" target="_blank">Resume</a></li>
                 </ul>
             </nav>
             <main>
                 <header class="header">
-                    <h1>Hello! I'm <br><strong class="name">Brett Benner,</strong> <br>a UX designer, developer, & advocate for intuitive interfaces.</h1>      
+                    <h1 id="welcomeText">Hello! I'm <br><strong class="name">Brett Benner;</strong> <br>a UX designer, developer, & advocate for intuitive interfaces.</h1>      
                 </header>
 
 
@@ -37,7 +37,7 @@
                 <section class="about-section">
                     <h2 id="about-title"><a name="aboutTarget">About</a></h2>
                     <p>Welcome to my site! I originally hail from San Diego where I developed a love for alt-rock, carne asada, and sun burns.
-                        Just recently I graduated from the <a href="https://uci.edu/" target="_blank">University of California, Irvine</a> with a specialization in Human-Computer Interaction. 
+                        Just recently I graduated from the <a href="https://uci.edu/" target="_blank">University of California, Irvine</a> with a specialization in Human-Computer Interaction and a love for material ions. 
                         I am currently working in Orange County as a <a href="https://theblog.adobe.com/what-does-a-ux-designer-actually-do/" target="_blank">UX Designer & Researcher</a>.
                     </p><br />
                     <p>
@@ -56,37 +56,53 @@
                     <h2 id="projects-title"><a name="projectsTarget">Projects</a></h2>
                     <article class="flex-container">
                         <div class="card">
-                            <img src="/static/images/pangea.png">
-                            <div class="card-details">
-                                <h4>UCSD: Parking & Notifications</h4>
-                                <span><button>Figma</button><button>User Research</button><button>App Design</button></span>
-                                <p>Designed new parking and notification screens for UCSD app for version 1 release.</p>
-                            </div>
+                            <a href="{{ url_for('ucsd') }}">
+                                <img src="/static/images/pangea.png">
+                                <div class="card-details">
+                                    <h4>UCSD: Parking & Notifications</h4>
+                                    <span><button>Figma</button><button>User Research</button><button>App Design</button></span>
+                                    <p>Designed new parking and notification screens for UCSD app for version 1 release.</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="card">
-                            <img src="/static/images/veritone.jpg">
-                            <div class="card-details">
-                                <h4>Veritone: Follow Me</h4>
-                                <span><button>ReactJS</button><button>Figma</button><button>Web Development</button></span>
-                                <p>Led the design processes for new ReactJS web application along with developing the scalable web app.</p>
-                            </div>
+                            <a href="{{ url_for('veritone') }}">
+                                <img src="/static/images/veritone.jpg">
+                                <div class="card-details">
+                                    <h4>Veritone: Follow Me</h4>
+                                    <span><button>ReactJS</button><button>Figma</button><button>Web Development</button></span>
+                                    <p>Led the design processes for new ReactJS web application along with developing the scalable web app.</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="card">
+                            <a href="{{ url_for('climatelens') }}">
                             <img src="/static/images/climatelense.png">
-                            <div class="card-details">
-                                <h4>Hackathon: ClimateLens</h4>
-                                <span><button>Figma</button><button>User Research</button><button>App Design</button></span>
-                                <p>Spearheaded user research processes for new climate change app and designed mockups & prototypes.</p>
-                            </div>
+                                <div class="card-details">
+                                    <h4>Hackathon: ClimateLens</h4>
+                                    <span><button>Figma</button><button>User Research</button><button>App Design</button></span>
+                                    <p>Spearheaded user research processes for new climate change app and designed mockups & prototypes.</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="card">
-                            <img src="/static/images/yummi.png">
-                            <div class="card-details">
-                                <h4>Yummi: Onboarding Screens</h4>
-                                <span><button>Figma</button><button>Photoshop</button></span>
-                                <p>Designed onboarding process and screens for the Yummi food logging app.</p>
-                            </div>
+                            <a href="{{ url_for('yummi') }}">
+                                <img src="/static/images/yummi.png">
+                                <div class="card-details">
+                                    <h4>Yummi: Onboarding Screens</h4>
+                                    <span><button>Figma</button><button>Photoshop</button></span>
+                                    <p>Designed onboarding process and screens for the Yummi food logging app.</p>
+                                </div>
+                            </a>
                         </div>
+                        <div class="card">
+                                <img src="/static/images/crane_logo.jpg">
+                                <div class="card-details">
+                                    <h4>Tomo No Kai: Graphic Design</h4>
+                                    <span><button>Photoshop</button></span>
+                                    <p>Designed graphics, logos, and marketing documents for Tomo No Kai club at UCI.</p>
+                                </div>
+                        </div> 
                         <div class="card">
                             <img src="/static/images/metamemory.jpg">
                             <div class="card-details">
@@ -103,19 +119,11 @@
                                 <p>Updated and transformed a static one page SquareSpace website into an online shop for the Carrie Forbes brand products.</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="/static/images/crane_logo.jpg">
-                            <div class="card-details">
-                                <h4>Tomo No Kai: Graphic Design</h4>
-                                <span><button>Photoshop</button></span>
-                                <p>Designed graphics, logos, and marketing documents for Tomo No Kai club at UCI.</p>
-                            </div>
-                        </div> 
                     </article>
                 </section>
 
                 <section class="contact-section">
-                    <h3>You can reach me at <a href="mailto:bbenner@uci.edu" target="_blank">bbenner@uci.edu!</a></h3>
+                    <h4>You can reach me at <a href="mailto:bbenner@uci.edu" target="_blank">bbenner@uci.edu!</a></h4>
                 </section>
             </main>
             <!--Contact information and social media links-->

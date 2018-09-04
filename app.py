@@ -10,14 +10,24 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/hello')
-def hello():
-    return render_template('hello.html')
+@app.route('/ucsd')
+def ucsd():
+    return render_template('ucsd.html')
 
 
-@app.route('/hidden')
-def hidden():
-    return "You found the hidden page!"
+@app.route('/veritone')
+def veritone():
+    return render_template('ucsd.html')
+
+
+@app.route('/climatelens')
+def climatelens():
+    return render_template('climatelens.html')
+
+
+@app.route('/yummi')
+def yummi():
+    return render_template('ucsd.html')
 
 
 if __name__ == '__main__':

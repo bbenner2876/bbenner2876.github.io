@@ -12,6 +12,10 @@ nav, footer {
     box-shadow: 0em .015em  .5em gray;
 }
 
+nav ul, footer {
+    list-style-type: none;
+}
+
 nav {
     top:0;
     padding-top: 15px;
@@ -20,7 +24,7 @@ nav {
 }
 
 footer {
-    margin-left: 20%;
+    margin-left: 5%;
     bottom: 0;
     padding: 8px 4px;
     padding-top: 8px;
@@ -58,20 +62,10 @@ nav a, p a, section a, .contact-section a{
 }
 
 
-nav a:hover, p a:hover, header a:hover, .contact-section a{
+nav a:hover, p a:hover, header a:hover, section a:hover, h4 a:hover{
     color:rgb(0, 100, 82);
     transition: 0.4s;
 
-}
-
-.card-details span {
-    vertical-align: bottom;
-}
-
-.card-details span button {
-    margin-right: 5px;
-    border: 1px solid lightgray;
-    border-radius: 3px;
 }
 
 
@@ -140,11 +134,22 @@ main {
 
 
 section {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 19%;
+    padding-right: 19%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    overflow: hidden;
+}
+
+.projects-section, .about-section {
     padding-top: 150px;
     padding-bottom: 150px;
-    overflow: hidden;
+}
+
+
+section h3 {
+    text-align: left;
+    margin-left: 0;
 }
 
 .about-section {
@@ -172,12 +177,13 @@ section {
 
 .contact-section {
     background-color: lightgray;
-    padding-left: 40%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.contact-section a {
+.contact-section h4 {
+    text-align: center;
+    font-size: 1.1em;
 }
 
 
@@ -192,29 +198,42 @@ mark{
 }
 
 ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-ul img:hover {
+section ul {
+    margin-left: 2em;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+footer ul img:hover {
     transform: scale(1);    
     transition: transform 0.5s ease;
     transform: scale(1.4);
 }
 
 
-h1 {
+#welcomeText {
     text-align: left;
     font-family: 'Dosis', sans-serif;
+    margin: 0;
+    font-size: 3.5em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    margin: 1.5em 19%;
     margin-bottom: 0;
-    font-size: 50px;
+    font-size: 4.5em;
 }
 
 h2 {
     font-family: 'Dosis', sans-serif;
     margin-top: 0;
-    border-bottom: 2px dotted rgb(0, 100, 82);
+    font-size: 3em;
 }
 
 #about-title {
@@ -235,9 +254,12 @@ h2 {
 
 
 h3 {
+    margin: 0 19%;
     margin-bottom: 0.25em;
-    font-size: 100%;
-    margin-top: 2em;
+    font-size: 1.5em;
+    margin-top: 1em;
+    text-align: center;
+    color: rgba(0,0,0,.7)
 }
 
 h4 {
@@ -245,10 +267,38 @@ h4 {
     margin-bottom: 0.5em;
 }
 
+
 p {
     margin: 0;
+    font-size: 1.1em;
+    line-height: 1.7;
 }
 
+.decorationImg {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 200px;
+}
+
+.persona, .useCase {
+    display: block;
+    margin: 2em auto;
+    box-shadow:0 .5em .5em rgba(0,0,0,0.15);
+}
+
+.persona {
+    width: 75%;
+}
+
+.useCase {
+    width: 90%;
+    border: 2px solid lightgray;
+}
+
+.caption {
+    padding-left: 10%;
+}
 
 
 /*FOOTER BAR*/
@@ -283,17 +333,23 @@ p {
 
 .card {
     border-radius: 5px;
-    border: 2px solid rgb(0, 100, 82, 0.574);
+    border: solid 3px #eaeaea;
     background: white;
     height: 28em;
     width: 240px;
     margin: 2% auto;
     overflow: hidden;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
 }
 
 .card:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.015), 0 10px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 28px 28px rgba(0, 0, 0, 0.015), 0 10px 10px rgba(0,0,0,0.15);
     transition: 0.5s;
+}
+
+.card a, .card-details h4{
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
 }
 
 .card-details {
@@ -312,7 +368,8 @@ p {
 .card img {
     width: 100%;
     height: 230px;
-    border-bottom: 2px dotted rgba(0, 100, 82, 0.574);
+    border-bottom: solid 3px #eaeaea;
+
 }
 
 .flex-container {
@@ -325,7 +382,25 @@ p {
     margin: 2px 0;
 }
 
+.card-details span {
+    vertical-align: bottom;
+}
 
+.card-details span button {
+    margin-right: 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.cardImg {
+
+    background: white;
+    height: auto;
+    width: 240px;
+    margin: 2% auto;
+    overflow: hidden;
+    box-shadow:0 .5em .5em rgba(0,0,0,0.15);
+}
 
 
 
@@ -333,6 +408,11 @@ p {
 
 /*----Smallest screens----*/
 @media (max-width:760px){
+
+    #welcomeText {
+        font-size: 2em;
+        text-align: center;
+    }
 
     nav {
         padding-top: .7em;
@@ -344,17 +424,20 @@ p {
     }
 
     h1 {
-        margin-top: 2em;
-        font-size: 35px;
-        text-align: center;
+        padding-top: 2em;
+        font-size: 2em;
+        margin: 0.5em 5%;
     }
     
     h2 {
+        font-size: 1.5em;
         margin-bottom: .25em;
     }
     
     h3 {
-        margin-top: .25em;
+        margin: 0.5em 5%;
+        font-size: 1em;
+
     }
     
     .name {
@@ -368,11 +451,12 @@ p {
     header {
         padding: 0 10px;
         min-height: 0px;
-        background-image: none;
+        background-image:none;
+        
     }
 
     section {
-        padding: 5%;
+        padding: 20% 5%;
     }
 
     .about-section{
@@ -412,5 +496,8 @@ p {
     h1 {
         margin-top: 15%;
     }
+}
+
+
 
 }

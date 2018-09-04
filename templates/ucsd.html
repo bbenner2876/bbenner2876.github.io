@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brett Benner</title>
+        <meta name="description" content="Online web portfolio for Brett Benner.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Brett Benner, Brett, Benner, Brett B">
+        <meta name="author" content="Brett Benner">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </head>
+    <body>
+  
+            <!--Header + Navigation-->
+            <nav class="navBar" id="myNavBar"><!--Main navigation bar for website linking to different sections-->
+                <ul>
+                    <li>
+                        <a href="{{ url_for('index') }}"> <img src="/static/images/arrow-back.svg" alt="email icon" height="14px" width="14px" fill="red"/>
+                            Back to the home page!</a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+
+                <h1>University of California, San Diego App: Parking & Notifications</h1>
+                <h3>Introducing notifications & live parking data to the UCSD app</h3>
+
+                <section>
+                    <h2>The Problem</h2>
+                    <h3>The Outline</h3>
+                    <p>
+                        UCSD has a powerful and versatile mobile app available for Android & iOS devices.
+                        The app development team at UCSD's technical services branch wanted to utilize recently
+                        installed 3rd party sensors which tracked the vacancy of parking spots in select parking lots on campus.
+                        The sensors can detect which specific spots are taken or not using object recognition in tandem with a system of cameras.
+                        Combined with existing knowledge of parking spot types, the system could be leveraged to recognized the type of spots available or taken.
+                        The parking & transporation department at UCSD asked the team to utilize this data in the form of an API
+                        to reduce parking congestion on campus and help students, staff, and faculty alike find parking spots.
+                    </p>
+                    <h3>Goals & Challenges</h3>
+                    <ul>
+                        <li>Allow users to view the parking inforation at a glance to reduce potential driving impacts.</li>
+                        <li>Provide "fuzzy data" that is not exact, but easy to understand.</li>
+                        <li>Show users parking data for multiple lots so they can make decisions.</li>
+                        <li>Allow users to set their parking types, including multiple permits.</li>
+                        <li>Allow users to choose which parking lots they want to track, up to 3.</li>
+                        <li>Consistency with existing UCSD app styles.</li>
+                        
+                        <br />
+                        <li>How do we display data information without crowding the screen?</li>
+                        <li>How do we decide between tracking parking permit types or parking spot types? Or both?</li>
+                        <li>How do we handle empty state screens or new users who have not selected parking lots to track?</li>
+                        <li>How do we show data for multiple permit/parking spot types at once?</li>
+                    </ul>
+                    <img class="decorationImg" src="/static/images/parking_art.png">
+                </section>
+
+                <section>
+                    <h2>The Process</h2>
+                    <p>
+                        The first step in approaching this project was to understand the potential users for the parking feature.
+                        From the initial brainstorming process two user groups were decided upon.
+                        <ul>
+                            <li>Students with erratic parking schedules and basic parking privileges.</li>
+                            <li>Faculty & Staff with stable schedules and better parking permits with higher spot accessibility.</li>
+                            <li>Visitors to the campus looking for parking were noted, but considered out of scope for the initial draft.</li>
+                        </ul>
+                    </p>
+                    
+                    <img class="persona" src="/static/images/Persona_ Ryan.png">
+                    <i class="caption">Persona for potential student users</i>
+                    <img class="persona" src="/static/images/Persona_ Laura.png">
+                    <i class="caption">Persona for potential staff & faculty users</i>
+                    <img class="useCase" src="/static/images/parking_use_case.png">
+                    <i class="caption">Use case for ideal user flow</i>
+
+                </section>
+
+                <section>
+                    <h2>The Design</h2>
+                    <a href="https://www.figma.com/proto/BTW8DOb0jvNPqOHF9Sl8nXZe/ucsd-parking-v5?node-id=0%3A1&scaling=min-zoom">
+                        Check out the prototype on Figma!</a>
+                                        <article class="flex-container">
+                        <div class="cardImg">
+                            <img src="/static/images/parking/pangea.png">
+                        </div>
+
+                        <div class="cardImg">
+                            <img src="/static/images/parking/gilman.png">
+                        </div>
+                        <div class="cardImg">
+                                <img src="/static/images/parking/p10.png">
+                        </div>
+                        <div class="cardImg">
+                                <img src="/static/images/parking/menu.png">
+                        </div>
+                        <div class="cardImg">
+                                <img src="/static/images/parking/first-visit.png">
+                        </div>
+                        <div class="cardImg">
+                                <img src="/static/images/parking/2-selected.png">
+                        </div>
+                        
+                        <div class="cardImg">
+                                <img src="/static/images/parking/staff.png">
+                        </div>
+                        <div class="cardImg">
+                                <img src="/static/images/parking/staff+student.png">
+                        </div>
+                        <div class="cardImg">
+                                <img src="/static/images/parking/max-select.png">
+                        </div>
+                        <div class="cardImg">
+                                <img src="/static/images/parking/pangea3.png">
+                        </div>
+                        
+                    </article>
+                </section>
+
+                <section class="contact-section">
+                        <h4>You can reach me at <a href="mailto:bbenner@uci.edu" target="_blank">bbenner@uci.edu!</a></h4>
+                </section>
+
+            </main>
+            <!--Contact information and social media links-->
+            <footer class="contact"> 
+                <ul>
+                    <li><a href="mailto:bbenner@uci.edu" target="_blank"><img src="/static/images/email-icon.svg" alt="email icon" height="24px" width="24px" fill="blue"/></a></li>
+                    <li><a href="images/Resume_bbenner_2018.pdf" target="_blank" download><img src="/static/images/resume.svg" height="24px" width="24px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/brett-benner-6514a063/" target="_blank"><img src="/static/images/linkedin.svg" height="24px" width="24px" ></a></li>
+                </ul>
+            </footer>  
+
+    </body>
+
+</html>
