@@ -472,6 +472,7 @@ p {
 
     header {
         padding: 0 10px;
+        padding-bottom: 30px;
         min-height: 0px;
         background-image:none;
         
@@ -488,6 +489,12 @@ p {
     .contact-section {
         padding-left: 0;
     }
+
+    .projects-section, .about-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
 }
 
 
