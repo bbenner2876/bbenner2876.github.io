@@ -263,7 +263,7 @@ h3 {
 }
 
 h4 {
-    margin-top: 5px;
+    margin-top: 1em;
     margin-bottom: 0.5em;
 }
 
@@ -398,11 +398,31 @@ p {
     background: white;
     height: auto;
     width: 240px;
+    height: 426px;
     margin: 2% auto;
     overflow: hidden;
     box-shadow:0 .5em .5em rgba(0,0,0,0.15);
 }
 
+.demo {
+    display: block;
+    margin: 3em auto;
+    width: 75%;
+}
+
+.tomo {
+    display: block;
+    margin: 1em auto;
+    margin-top: 3em;
+    width: 40%;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+
+}
+
+.tomo:hover {
+    box-shadow:  0 10px 10px rgba(0,0,0,0.35);
+    transition: 0.5s;
+}
 
 
 /*--------Breakpoints and media queries for responsive design--------*/
@@ -431,13 +451,14 @@ p {
     }
     
     h2 {
-        font-size: 1.5em;
+        font-size: 1.75em;
         margin-bottom: .25em;
     }
     
     h3 {
         margin: 0.5em 5%;
-        font-size: 1em;
+        margin-top: 1em;
+        font-size: 1.25em;
 
     }
     

@@ -34,92 +34,123 @@
                         <h2>The Problem</h2>
                         <h3>The Outline</h3>
                         <p>
-                            UCSD has a powerful and versatile mobile app available for Android & iOS devices.
-                            The app development team at UCSD's technical services branch wanted to utilize recently
-                            installed 3rd party sensors which tracked the vacancy of parking spots in select parking lots on campus.
-                            The sensors can detect which specific spots are taken or not using object recognition in tandem with a system of cameras.
-                            Combined with existing knowledge of parking spot types, the system could be leveraged to recognized the type of spots available or taken.
-                            The parking & transporation department at UCSD asked the team to utilize this data in the form of an API
-                            to reduce parking congestion on campus and help students, staff, and faculty alike find parking spots.
+                            This project was created as a means to utilize the interconnectedness and ubqiquity of mobile apps to motivate and empower the massive
+                            pool of young phone users to actively combat climate change.
+                            There currently exists no central hub where individuals can track local environmental causes and solutions to support.
+                            Young adults are often educated and aware of climate change, but often take no action due to either:
+                            <ul>
+                                <li>not feeling as if they can make a difference</li>
+                                <li>lack of interest in climate change in general</li>
+                                <li>or not knowing what steps to take</li>
+                            </ul>
                         </p>
                         <h3>Goals & Challenges</h3>
                         <ul>
-                            <li>Allow users to view the parking inforation at a glance to reduce potential driving impacts.</li>
-                            <li>Provide "fuzzy data" that is not exact, but easy to understand.</li>
-                            <li>Show users parking data for multiple lots so they can make decisions.</li>
-                            <li>Allow users to set their parking types, including multiple permits.</li>
-                            <li>Allow users to choose which parking lots they want to track, up to 3.</li>
-                            <li>Consistency with existing UCSD app styles.</li>
+                            <li>Inspire unmotivated young phone users to care about climate change</li>
+                            <li>Make the fight against climate change interesting</li>
+                            <li>Give tailored directions for users to participate in the fight</li>
                             
                             <br />
-                            <li>How do we display data information without crowding the screen?</li>
-                            <li>How do we decide between tracking parking permit types or parking spot types? Or both?</li>
-                            <li>How do we handle empty state screens or new users who have not selected parking lots to track?</li>
-                            <li>How do we show data for multiple permit/parking spot types at once?</li>
+                            <li>How do we provide information without overwhelming or boring users?</li>
+                            <li>How do we tailor information so that it is relevant to users?</li>
+                            <li>How do we keep users coming back to the app?</li>
                         </ul>
                         <img class="decorationImg" src="/static/images/global_warming.png">
                     </section>
     
                     <section>
                         <h2>The Process</h2>
-                        <p>
-                            The first step in approaching this project was to understand the potential users for the parking feature.
-                            From the initial brainstorming process two user groups were decided upon.
-                            <ul>
-                                <li>Students with erratic parking schedules and basic parking privileges.</li>
-                                <li>Faculty & Staff with stable schedules and better parking permits with higher spot accessibility.</li>
-                                <li>Visitors to the campus looking for parking were noted, but considered out of scope for the initial draft.</li>
-                            </ul>
-                        </p>
+                        <h3>Understanding Our Users</h3>
+
+                        <img class="useCase" src="/static/images/valuepropcanvas.png">
+                        <i class="caption">Value Proposition Canvas for ClimateLens</i>
+
+                        <img class="useCase" src="/static/images/cl_journeymap.png">
+                        <i class="caption">User Journey Map/possible flows for ClimateLens</i>
+
+                        <h3>The 3x3x3 Plan</h3>
+                        <h4>Three Week</h4>
+                        <ul>
+                            <li>Goals: We aim to have an MVP with basic AR functionality for a single hotspot, pledging and liking functionality</li>
+                            <li>Minimum Success Criteria: 25 unique signatures/pledges</li>
+                            <li>Assessment Plans: requirements checking</li>
+                            <li>Agenda: building MVP app and user testing</li>
+                            <li>Main Risks: wasting too much time developing unnecessary functionality and aspects of the app.</li>
+                            <li>Results: a basic MVP with core functionality, but no AR hotspot.</li>
+                        </ul>
+                        <h4>Three Month</h4>
+                        <ul>
+                                <li>Goals: To add social media and community functionality and create 50 hotspots in unique locations around california. Also to test thi s basic functional application with beta testers.</li>
+                                <li>Minimum Success Criteria: Achieving 1,500 pledges and reaching a cooperative agreement with a local climate change organization.</li>
+                                <li>Assessment Plans: user testing and signature count</li>
+                                <li>Agenda: develop the AR hotspots and continue forward with user testing and analysis on beta testers</li>
+                                <li>Main Risks: development difficulties with implementing AR feature, producing enough marketing to acquire 2,500 signatures</li>
+                                <li>Progress: working MVP</li>
+                        </ul>
+                        <h4>Three year</h4>
+                        <ul>
+                            <li>Goals: To have a fully functional and usable application and have partnerships with sustainability organizations nationwide, and an active user community.</li>
+                            <li>Minimum Success Criteria: To have financial sustainability with a coalition of climate change partners, active online community of activists.</li>
+                            <li>Assessment Plans: evaluate partnerships with other organizations and user testing analysis</li>
+                            <li>Agenda: reach out to climate change and pro-sustainability organizations</li>
+                            <li>Main Risks: inability to form partnerships with organizations and losing our main channels and financial stability</li>
+                        </ul>
                         
-                        <img class="persona" src="/static/images/Persona_ Ryan.png">
-                        <i class="caption">Persona for potential student users</i>
-                        <img class="persona" src="/static/images/Persona_ Laura.png">
-                        <i class="caption">Persona for potential staff & faculty users</i>
-                        <img class="useCase" src="/static/images/parking_use_case.png">
-                        <i class="caption">Use case for ideal user flow</i>
     
                     </section>
     
                     <section>
                         <h2>The Design</h2>
-                        <a href="https://www.figma.com/proto/BTW8DOb0jvNPqOHF9Sl8nXZe/ucsd-parking-v5?node-id=0%3A1&scaling=min-zoom">
-                            Check out the prototype on Figma!</a>
-                                            <article class="flex-container">
+                            <h3>Onboarding Screens</h3>
+                            <article class="flex-container">
                             <div class="cardImg">
-                                <img src="/static/images/parking/pangea.png">
+                                <img src="/static/images/climatelens/onboard1.png">
                             </div>
     
                             <div class="cardImg">
-                                <img src="/static/images/parking/gilman.png">
+                                <img src="/static/images/climatelens/onboard2.png">
                             </div>
                             <div class="cardImg">
-                                    <img src="/static/images/parking/p10.png">
+                                <img src="/static/images/climatelens/onboard3.png">
                             </div>
                             <div class="cardImg">
-                                    <img src="/static/images/parking/menu.png">
+                                <img src="/static/images/climatelens/onboard4.png">
                             </div>
-                            <div class="cardImg">
-                                    <img src="/static/images/parking/first-visit.png">
-                            </div>
-                            <div class="cardImg">
-                                    <img src="/static/images/parking/2-selected.png">
-                            </div>
-                            
-                            <div class="cardImg">
-                                    <img src="/static/images/parking/staff.png">
-                            </div>
-                            <div class="cardImg">
-                                    <img src="/static/images/parking/staff+student.png">
-                            </div>
-                            <div class="cardImg">
-                                    <img src="/static/images/parking/max-select.png">
-                            </div>
-                            <div class="cardImg">
-                                    <img src="/static/images/parking/pangea3.png">
-                            </div>
-                            
                         </article>
+
+                        <h3>Core Screens</h3>
+                        <article class="flex-container">
+                        <div class="cardImg">
+                            <img src="/static/images/climatelens/appnav1.png">
+                        </div>
+
+                        <div class="cardImg">
+                            <img src="/static/images/climatelens/appnav2.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/climatelens/ar3.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/climatelens/ar4.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/climatelens/participate5.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/climatelens/orgs6.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/climatelens/place7.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/climatelens/pledges8.png">
+                        </div>
+                    </article>
+
+                        <h3>The Minimum Viable Product (iOS App)</h3>
+                        <iframe class="demo" width="560" height="315" src="https://www.youtube.com/embed/nngo7sLMZrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                    </article>
                     </section>
     
                     <section class="contact-section">

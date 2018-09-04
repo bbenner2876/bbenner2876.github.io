@@ -25,9 +25,9 @@ def climatelens():
     return render_template('climatelens.html')
 
 
-@app.route('/yummi')
-def yummi():
-    return render_template('ucsd.html')
+@app.route('/tomo')
+def tomo():
+    return render_template('tomo.html')
 
 
 if __name__ == '__main__':
