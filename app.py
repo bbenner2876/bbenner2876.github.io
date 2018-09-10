@@ -29,6 +29,10 @@ def climatelens():
 def tomo():
     return render_template('tomo.html')
 
+@app.route('/hvac')
+def hvac():
+    return render_template('hvac.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
