@@ -33,6 +33,10 @@ def tomo():
 def hvac():
     return render_template('hvac.html')
 
+@app.route('/redesign')
+def redesign():
+    return render_template('redesign.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

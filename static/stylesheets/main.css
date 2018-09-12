@@ -62,7 +62,7 @@ nav a, p a, section a, .contact-section a{
 }
 
 
-nav a:hover, p a:hover, header a:hover, section a:hover, h4 a:hover{
+nav a:hover, p a:hover, header a:hover, section a:hover, h3 a:hover, h4 a:hover{
     color:rgb(0, 100, 82);
     transition: 0.4s;
 

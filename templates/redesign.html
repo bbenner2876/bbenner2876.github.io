@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brett Benner</title>
+        <meta name="description" content="Online web portfolio for Brett Benner.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Brett Benner, Brett, Benner, Brett B">
+        <meta name="author" content="Brett Benner">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </head>
+    <body>
+  
+            <!--Header + Navigation-->
+            <nav class="navBar" id="myNavBar"><!--Main navigation bar for website linking to different sections-->
+                <ul>
+                    <li>
+                        <a href="{{ url_for('index') }}"> <img src="/static/images/arrow-back.svg" alt="email icon" height="14px" width="14px" fill="red"/>
+                            Back to the home page!</a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+
+                <h1>UCSD: Parking App Redesign</h1>
+                <h3>Redesigning the UCSD Parking App from scratch with a new focus on data visualization and more control for users.</h3>
+
+                <section>
+                    <h2>The Outline</h2>
+
+                    <h3>Background of The UCSD App</h3>
+                    <ul>
+                        <li>Primarily used by students, staff, and faculty at UCSD</li>
+                        <li>Occasionally visitors</li>
+                        <li>Consists of unique cards and section</li>
+                        <li>Project focuses on the parking card/section</li>
+                    </ul>
+
+                    <h3>First design</h3>
+                    <ul>
+                        <li> User subscribes to 1-3 parking lots or is given default parking lots</li>
+                        <li> Percentage availability of parking is displayed for these lots and sneak peeks at availability of other lots</li>
+                        <li>Customizable by parking permit</li>
+                    </ul>
+
+                    <div class="cardImg">
+                        <img src="/static/images/redesign/FirstDesign2.png">
+                    </div>
+
+                    <h3>Feedback</h3>
+                    <ul>
+                        <li>Utilize the system of lots as a whole</li>
+                        <li>Display trends or data over time</li>
+                        <li>Utilize lesser used lots that users might not be aware of</li>
+                        <li>More flexibility over all</li>
+                    </ul>
+
+                    <h3>Re-design</h3>
+                    <ul>
+                        <li> Interactive map of parking lots</li>
+                        <li> Allows for navigation through gesturing or searching</li>
+                        <li>Users can see the number of spots of nearby parking locations within an area</li>
+                        <li>Users can select which permits and parking spots to use</li>
+                        <li>Selecting a lot will give more detailed information + trends in parking</li>
+                        <li>Useful for estimating how parking will change by the time the user arrives</li>
+                        <li>Users can search for locations or lots</li>
+                        <li>Locations will pop up on the map</li>
+                        <li>Users can then select nearby lots to see the distance</li>
+                        <li>Shown as the dotted red line</li>
+                        <li>Users can choose to navigate to selected locations or to lots through the app which would then open Google Maps directly</li>
+                    </ul>   
+
+
+
+                </section>
+
+                <section>
+                    <h2>The Re-design</h2>
+                    
+                    <h3><a href="https://www.figma.com/proto/LbFcsGD4sd4vZgo5qHFVj8/parking-REDESIGN?node-id=84%3A2230&scaling=scale-down" target="_blank">
+                        Clickable Mockups on figma
+                    </a></h3>
+                    
+                    
+
+                    <h3>Screens</h3>
+                    <article class="flex-container">
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/StudentOnly.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/Home.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/Gilman.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/P103.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/Pangea.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/AccessibilityVisitorOn.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/AccesibilityOn.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/Type.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/Type2.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/DestinationClicked.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/Destination.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/GilmanDestination.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/PangeaDestination-1.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/MapDragRight.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/MapDragLeft.png">
+                        </div>
+                        <div class="cardImg">
+                            <img src="/static/images/redesign/MapDragDown.png">
+                        </div>
+                        
+                    </article>
+
+         
+
+                </section>
+    
+                </main>
+                <!--Contact information and social media links-->
+                <footer class="contact"> 
+                    <ul>
+                        <li><a href="mailto:bbenner@uci.edu" target="_blank"><img src="/static/images/email-icon.svg" alt="email icon" height="24px" width="24px" fill="blue"/></a></li>
+                        <li><a href="images/Resume_bbenner_2018.pdf" target="_blank" download><img src="/static/images/resume.svg" height="24px" width="24px"></a></li>
+                        <li><a href="https://www.linkedin.com/in/brett-benner-6514a063/" target="_blank"><img src="/static/images/linkedin.svg" height="24px" width="24px" ></a></li>
+                    </ul>
+                </footer>  
+    
+        </body>
+    
+    </html>
