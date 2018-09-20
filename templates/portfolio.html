@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brett Benner</title>
+        <meta name="description" content="Online web portfolio for Brett Benner.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Brett Benner, Brett, Benner, Brett B">
+        <meta name="author" content="Brett Benner">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </head>
+    <body>
+  
+            <!--Header + Navigation-->
+            <nav class="navBar" id="myNavBar"><!--Main navigation bar for website linking to different sections-->
+                <ul>
+                    <li>
+                        <a href="{{ url_for('index') }}"> <img src="/static/images/arrow-back.svg" alt="email icon" height="14px" width="14px" fill="red"/>
+                            Back to the home page!</a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+
+                <h1>Portfolio Site & Research</h1>
+                <h3>Overview of research conducted for portfolio site.</h3>
+
+                <section>
+                    <h2>Research Outline</h2>
+                    <p>
+                        Research for my portfolio site was broken down into 2 stages: the big picture and features. It is critical to
+                        understand the overall goal of any project before proceeding with development or even design. Furthermore understanding potential users
+                        and existing competitors greatly facilitates the rest of the design process and gives substance to more abstract questions that arise in design. 
+                    </p>
+                    <br />
+                    <p>
+                        The first research process focused on a quick competitor (other designers) analysis of existing portfolio sites and analyzing what they did well,
+                        what could be improved, and how their site stood out. Interviews were conducted after with individuals representing the 3 major user groups I identified:
+                        industry veterans, mildly experienced individuals in the tech field, and non-technical visitors.
+                    </p>
+                    <br />
+                    <p>
+                        After identifying the core users and takeaways from the first research phase I was ready to go ahead and start planning out the tangible.
+                        Findings from the previous research artifacts guided most of the feature prioritization and allowed me to decide which features were the most desireable by users.
+                        Development difficulty was decided by experience working with similar features in the past and how I believed I would measure up.
+                        Finally, a Kano Model was added to help visualize the core features that I should be focusing on first during development.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Big Picture Research</h2>
+                    <h3>Competitor Analysis</h3>
+                    <img class="persona" src="/static/images/portfolio/competitor_analysis.png">
+                    <i class="caption">Competitor analysis of online portfolios for designers in Orange County</i>
+
+                    <h3>Interviews</h3>
+                    <img class="persona" src="/static/images/portfolio/alex_interview.png">
+                    <i class="caption">Interview with a veteran of the tech industry</i>
+                    
+                    <img class="persona" src="/static/images/portfolio/kent_interview1.png">
+                    <img class="persona" src="/static/images/portfolio/kent_interview2.png">
+                    <i class="caption">Interview with a recent graduate and newcomer to the tech field</i>
+
+                </section>
+
+                <section>
+                    <h2>Identifying and Prioritizing Features</h2>
+                    <h3>Feature Value Matrix</h3>
+                    <img class="persona" src="/static/images/portfolio/feature_matrix.png">
+
+                    <h3>Feature Priority Graph</h3>
+                    <img class="persona" src="/static/images/portfolio/feature_priority.png">
+
+                    <h3>Kano Model</h3>
+                    <img class="persona" src="/static/images/portfolio/kano_model.png">
+
+                </section>
+
+    
+                </main>
+                <!--Contact information and social media links-->
+                <footer class="contact"> 
+                    <ul>
+                        <li><a href="mailto:bbenner@uci.edu" target="_blank"><img src="/static/images/email-icon.svg" alt="email icon" height="24px" width="24px" fill="blue"/></a></li>
+                        <li><a href="images/Resume_bbenner_2018.pdf" target="_blank" download><img src="/static/images/resume.svg" height="24px" width="24px"></a></li>
+                        <li><a href="https://www.linkedin.com/in/brett-benner-6514a063/" target="_blank"><img src="/static/images/linkedin.svg" height="24px" width="24px" ></a></li>
+                    </ul>
+                </footer>  
+    
+        </body>
+    
+    </html>
