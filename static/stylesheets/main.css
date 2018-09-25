@@ -282,14 +282,20 @@ p {
     width: 200px;
 }
 
-.persona, .useCase, .journeyMap {
+.persona, .useCase, .journeyMap, .userFlow {
     display: block;
-    margin: 2em auto;
+    margin: 3em auto;
     box-shadow:0 .5em .5em rgba(0,0,0,0.15);
 }
 
-.persona, .journeyMap {
+.persona, .userFlow {
     width: 80%;
+}
+
+.journeyMap {
+    width: 100%;
+    padding-bottom: 1em;
+    padding-right: 1em;
 }
 
 .useCase {
