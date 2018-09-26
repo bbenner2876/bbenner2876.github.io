@@ -17,7 +17,7 @@ def ucsd():
 
 @app.route('/veritone')
 def veritone():
-    return render_template('ucsd.html')
+    return render_template('veritone.html')
 
 
 @app.route('/climatelens')
@@ -40,6 +40,8 @@ def redesign():
 @app.route('/portfolio')
 def portfolio():
     return render_template('portfolio.html')
+
+
 
 
 if __name__ == '__main__':
