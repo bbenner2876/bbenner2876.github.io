@@ -520,11 +520,8 @@ p {
 
 
 
-/*----Larger desktop screens----*/
+/*----Medium desktop screens----*/
 @media (min-width:1480px){
-    body{
-    }
-    
     nav li {
         margin: 0 1em;
     }
@@ -536,4 +533,13 @@ p {
 
 
 
+
+
+/*----Large desktop screens----*/
+@media (min-height:850px){
+    header {
+        padding-top: 18em;
+    }
+
 }
+
