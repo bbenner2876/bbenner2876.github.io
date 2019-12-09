@@ -2,37 +2,21 @@
 
 
 /*Navigation bar*/
+html {
+    scroll-behavior: smooth;
+}
+
 nav, footer {
     background-color: white;
     position: fixed;
     left: 0;
     right: 0;
     z-index: 9999;
-    text-align: center;
-    box-shadow: 0em .015em  .5em gray;
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-
-nav ul, footer {
-    list-style-type: none;
-}
-
-nav {
-    top:0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-}
-
-footer {
-    margin-left: 5%;
-    bottom: 1em;
-    padding: 8px 4px;
-    padding-top: 8px;
-    width: 130px;
-    border-radius: 10px;
-    
-}
-
 
 nav a.hamburgerMenu, footer a.hamburgerMenu {
     display:none;
@@ -40,83 +24,54 @@ nav a.hamburgerMenu, footer a.hamburgerMenu {
 
 nav li, footer li{
     display: inline-block;
-    margin: 0 0.5em;
 }
-
-nav a {
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-
-}
-
-nav a:hover {
-    border-bottom: 2px dotted black;
-}
-
-nav a, p a, section a, .contact-section a{    
-    transition: box-shadow .5s, color .5s;
-    transition-delay: linear;
-    font-size: 1em;
-    color: darkgray;
-    
-}
-
-
-nav a:hover, p a:hover, header a:hover, section a:hover, h3 a:hover, h4 a:hover{
-    color:rgb(0, 100, 82);
-    transition: 0.4s;
-
-}
-
-
-a {
-    text-decoration: underline dotted black;
-
-}
-
-
-a:visited {
-    text-decoration: underline dotted rgb(0, 100, 82);
-    color: darkgray;
-}
-
-h2 a {
-    text-decoration: none;
-}
-
+ 
 
 /*BODY CONTENT*/
 
 
-header {
-    padding-top: 8em;
-    padding-left: 20%;
-    padding-right: 27%;
-    padding-bottom: 14em;
+h1 {
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 0;
+    font-size: 100px;
+    line-height: 1.4;
+}
 
-    background-image: url('/static/images/mountain_svg_bg.png');
+h3 {
+    margin-bottom: 0.25em;
+    font-size: 1.5em;
+    color: rgba(0,0,0,.7);
+    font-weight: 500;
+}
+
+h4 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+
+p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+
+header {
+    background-image: url('/static/assets/images/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
 
-    border-left: 8px solid black;
-    min-height: 600px;
+    padding-left: 15%;
+    padding-top: 100px;
+    padding-bottom: 300px;
 
 }
 
-header h2 {
-    border: none;
-    margin: 0;
-}
-
-.email {
-    color: rgb(0, 100, 82);
-}
-
-.header-container {
-    padding-top: 70px;
-
+#header-content {
+    width: 700px;
 }
 
 body {
@@ -131,20 +86,71 @@ body {
 main {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 100px;
 }
 
+a {
+    text-decoration: none;
+    color: #37A265;
+    filter: opacity(.7);
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+nav {
+    top: 0;
+}
+
+nav ul {
+    height: 24px;
+}
+
+nav ul li {
+    margin-right: 45px;
+}
+
+
+nav a, nav a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover, a:hover {
+    filter: opacity(1);
+    transition: 0.4s;
+}
+
+
+
+
+
+/* SECTIONS */
 
 section {
-    padding-left: 19%;
-    padding-right: 19%;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-.projects-section, .about-section {
-    padding-top: 150px;
-    padding-bottom: 150px;
+section p{
+    line-height: 2;
 }
 
 
@@ -154,54 +160,16 @@ section h3 {
 }
 
 .about-section {
-    border-left: 8px solid #ffd039;
-    background-image: url('/static/images/prof_pic_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+    background-image: url('/static/assets/images/prof_pic_bg.png');
+
 }
 
-.about-section p {
-    line-height: 2;
-}
 
 .projects-section {
-    border-left: 8px solid rgb(0, 100, 82);
-    
-    /**background-image: url('/static/images/mountain_svg_bg.png');**/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
 
-.contact-section {
-    background-color: lightgray;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.contact-section h4 {
-    text-align: center;
-    font-size: 1.1em;
 }
 
 
-mark{
-    background-color: rgb(1, 64, 52);
-    ;
-    padding: 0 3px;
-}
-
-.name {
-    font-size: 150%;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
 
 section ul {
     margin-left: 2em;
@@ -209,71 +177,6 @@ section ul {
     line-height: 1.7;
 }
 
-footer ul img:hover {
-    transform: scale(1);    
-    transition: transform 0.5s ease;
-    transform: scale(1.4);
-}
-
-
-#welcomeText {
-    text-align: left;
-    font-family: 'Dosis', sans-serif;
-    margin: 0;
-    font-size: 3.5em;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-    margin: 1.5em 19%;
-    margin-bottom: 0;
-    font-size: 4.5em;
-}
-
-h2 {
-    font-family: 'Dosis', sans-serif;
-    margin-top: 0;
-    font-size: 3em;
-}
-
-#about-title {
-    border-bottom: 2px dotted #ffd039;
-}
-
-#about-title a {
-    color: #ffd039;
-}
-
-#projects-title {
-    border-bottom: 2px dotted rgb(0, 100, 82);
-}
-
-#projects-title a {
-    color: rgb(0, 100, 82); 
-}
-
-
-h3 {
-    margin: 0 19%;
-    margin-bottom: 0.25em;
-    font-size: 1.5em;
-    margin-top: 1em;
-    text-align: center;
-    color: rgba(0,0,0,.7)
-}
-
-h4 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-}
-
-
-p {
-    margin: 0;
-    font-size: 1.1em;
-    line-height: 1.7;
-}
 
 .decorationImg {
     display: block;
@@ -306,31 +209,6 @@ p {
 .caption {
     padding-left: 10%;
 }
-
-
-/*FOOTER BAR*/
-
-.resumeArrow {
-    width:1em;
-    vertical-align: top;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.resumeDownloadArrow {
-    width:1em;
-    vertical-align: top;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-    
-}
-
 
 
 
@@ -426,11 +304,6 @@ p {
 
 }
 
-.tomo:hover {
-    box-shadow:  0 10px 10px rgba(0,0,0,0.35);
-    transition: 0.5s;
-}
-
 
 /*--------Breakpoints and media queries for responsive design--------*/
 
@@ -439,16 +312,6 @@ p {
 
     #welcomeText {
         font-size: 2em;
-        text-align: center;
-    }
-
-    nav {
-        padding-top: .7em;
-        padding-bottom: .7em;
-    }
-    
-    nav li {
-        margin: 0 .15em;
     }
 
     h1 {
@@ -456,11 +319,7 @@ p {
         font-size: 2em;
         margin: 0.5em 5%;
     }
-    
-    h2 {
-        font-size: 1.75em;
-        margin-bottom: .25em;
-    }
+
     
     h3 {
         margin: 0.5em 5%;
@@ -469,9 +328,6 @@ p {
 
     }
     
-    .name {
-        font-size: 125%;
-    }
     
     body {
         font-size: 1em;
@@ -486,7 +342,7 @@ p {
     }
 
     section {
-        padding: 20% 5%;
+        
     }
 
     .about-section{
@@ -509,11 +365,7 @@ p {
 
 /*----Medium sized screens: laptops, tablets----*/
 @media (min-width:760px) and (max-width:1480px){
-    main{
-        padding-right: 0;
-        padding-left: 0;
-    }      
-    
+
 }
 
 
@@ -522,10 +374,6 @@ p {
 
 /*----Medium desktop screens----*/
 @media (min-width:1480px){
-    nav li {
-        margin: 0 1em;
-    }
-    
     h1 {
         margin-top: 15%;
     }
