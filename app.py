@@ -35,7 +35,7 @@ def hvac():
 
 @app.route('/redesign')
 def redesign():
-    return render_template('redesign.html')
+    return render_template('https://www.figma.com/proto/LbFcsGD4sd4vZgo5qHFVj8/parking-REDESIGN?node-id=83%3A3&scaling=scale-down')
 
 @app.route('/portfolio')
 def portfolio():
